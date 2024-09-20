@@ -106,7 +106,7 @@ nav ul li a:hover::after{
 }
 #icon{
     border-radius: 50%;
-    height: 400px;
+    height: 350px;
 }
 .about-column-1{
     flex-basis: 20%;
@@ -117,11 +117,11 @@ nav ul li a:hover::after{
 .container-2{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     color: white;
-    padding-left: 150px;
-    padding-right: 150px;
+    /* padding-left: 150px;
+    padding-right: 150px; */
 }
 #my-skills{
     text-align: center;
@@ -158,8 +158,9 @@ p span{
 
 }
 .edu span img{
-    background: #ff004f;
+    /* background: #ff004f; */
     border-radius: 50%;
+    margin-left: 5px;
 }
 h4{
     color: lightgray;
@@ -231,7 +232,9 @@ textarea {
 textarea:focus {
     outline: none;
 }
-
+.container2{
+    display: block;
+}
 
 .btn{
     margin-top: 5px;
@@ -245,3 +248,145 @@ textarea:focus {
     border-radius: 200px;
 }
 
+/* MAKING IT RESPONSIVE USING MEDIA QUERIES*/
+/* Responsive styles for phones */
+
+@media (max-width: 768px) { 
+    /* Header */
+    #header {
+        height: auto;
+        padding-top: 80px;
+    }
+    .header-text {
+        /* margin-top: 10%; */
+        margin-top: 100px;
+        font-size: 24px;
+    }
+    .header-text h1 {
+        font-size: 24px;
+    }
+
+    /* Navbar */
+    .navi {
+        /* padding: 10px 50px; */
+        padding: 10px 20px;
+
+    }
+    nav ul {
+        padding: 0;
+    }
+    nav ul li {
+        margin: 5px 10px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    /* About Section */
+    #about {
+        font-size: 20px;
+    }
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-column-1,
+    .about-column-2 {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    #icon {
+        height: 200px;
+    }
+    #abtme-para{
+        /* line-height: 2.5; */
+        padding-bottom: 5px;
+    }
+
+    /* Skills Section */
+    .div-skills {
+        height: 150px;
+        width: 150px;
+    }
+
+    /* Education Section */
+    .education {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .edu-content {
+        padding-left: 0;
+    }
+
+    /* Projects Section */
+    #image {
+        height: auto;
+        width: 100%;
+    }
+
+    /* Contact Me Section */
+    .left,
+    .right {
+        width: 100%;
+        text-align: center;
+    }
+    .right input,
+    #message {
+        width: 100%;
+    }
+    .btn {
+        width: 100px;
+        margin-top: 10px;
+    }
+    .cert {
+        margin: 20px auto; /* Center the div and add margin at the top and bottom */
+        height: auto; /* Allow height to adjust based on content */
+        width: 90%; /* Adjust width to fit smaller screens */
+        background: #1A1A1A;
+        padding: 20px; /* Add padding for better spacing */
+        box-sizing: border-box; /* Include padding in width calculation */
+    }
+    h1 {
+        font-size: 24px;
+        padding: 20px 0; /* Add padding for spacing */
+    }
+    /* Projects Section */
+    .proj {
+        text-align: left; /* Align text to the left */
+        margin-bottom: 20px; /* Add spacing between projects */
+    }
+
+    .proj img {
+        height: auto;
+        width: 100%; /* Make images take full width of the container */
+        margin-bottom: 10px; /* Add space between image and text */
+    }
+
+    .wil-main {
+        flex-direction: column; /* Stack images and text vertically */
+        align-items: center;
+    }
+
+    #image1,
+    #image2,
+    #image3 {
+        width: 100%; /* Ensure images take full width on smaller screens */
+        height: auto;
+    }
+
+    /* Contact Me Section */
+    .left,
+    .right {
+        width: 100%;
+        text-align: center;
+    }
+    .right input,
+    #message {
+        width: 100%;
+    }
+    .btn {
+        width: 100px;
+        margin-top: 10px;
+    }
+}

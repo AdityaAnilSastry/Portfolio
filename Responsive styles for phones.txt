@@ -1,0 +1,82 @@
+/* Responsive styles for phones */
+@media (max-width: 768px) {
+    /* Header */
+    #header {
+        height: auto;
+    }
+    .header-text {
+        margin-top: 10%;
+        font-size: 24px;
+    }
+    .header-text h1 {
+        font-size: 24px;
+    }
+
+    /* Navbar */
+    .navi {
+        padding: 10px 50px;
+    }
+    nav ul {
+        padding: 0;
+    }
+    nav ul li {
+        margin: 5px 10px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    /* About Section */
+    #about {
+        font-size: 20px;
+    }
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-column-1,
+    .about-column-2 {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    #icon {
+        height: 200px;
+    }
+
+    /* Skills Section */
+    .div-skills {
+        height: 150px;
+        width: 150px;
+    }
+
+    /* Education Section */
+    .education {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .edu-content {
+        padding-left: 0;
+    }
+
+    /* Projects Section */
+    #image {
+        height: auto;
+        width: 100%;
+    }
+
+    /* Contact Me Section */
+    .left,
+    .right {
+        width: 100%;
+        text-align: center;
+    }
+    .right input,
+    #message {
+        width: 100%;
+    }
+    .btn {
+        width: 100px;
+        margin-top: 10px;
+    }
+}
